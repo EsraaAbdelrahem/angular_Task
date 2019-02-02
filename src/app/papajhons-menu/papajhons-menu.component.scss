@@ -1,0 +1,87 @@
+
+
+table {
+    margin-top: 20px;
+    padding-top: 30px; 
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+  
+  td, th {
+    padding-top: 30px; 
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  
+
+h2{ 
+    
+    color: rgb(73, 72, 72);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.button {
+    background-color:  rgb(60, 168, 231) ; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+  }
+.left-button{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.right-button{
+
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}  
+
+@media screen and (max-width: 380px) {
+  .table{
+    margin-top: 20px;
+    padding-top: 30px; 
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+   
+  }
+  .button , .right-button , .left-button{
+    display: inline-block !important;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .table{
+    margin-top: 20px;
+    padding-top: 30px; 
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+  .button , .right-button , .left-button{
+    display: inline-block !important;
+  }
+  
+}
+
+
+
+
+

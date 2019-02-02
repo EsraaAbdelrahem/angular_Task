@@ -1,0 +1,149 @@
+.sidebar{
+    background-color: rgb(255, 255, 255);
+    height:100%;
+    width:100%;
+    font-size: 1rem !important;
+}
+.sidebar .Info{
+    display:grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 2;
+    grid-gap: 10px;
+    padding-top: 20px;
+    font-size: 1rem !important;
+}
+
+.sidebar .Info img{
+    width:60px;
+    border-radius: 50%;
+    margin:5px;
+}
+.sidebar .Info h6{
+    padding-left: 10px;
+ 
+}
+.Categories{
+    color:rgb(187, 180, 180);
+}
+.sidebar .Info .active{
+   
+  color: rgb(76, 146, 76) !important;
+font-size: 10px;
+  
+
+}
+
+.Counter{
+    width:18px !important;
+    border-radius: 50%;
+    background-color: rgb(226, 119, 119);
+    color: white;
+    outline: none;
+    border: none;
+    text-align: center;
+    
+}
+.marketing {
+   padding-left: 20px;
+   margin-top: 40px;
+}
+.fa{
+    margin-left:10px;
+    color: rgb(37, 29, 126) !important;
+ 
+}
+
+@media only screen and (min-width: 900px) {
+    .marketing {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+.sidebar{
+    background-color: rgb(191, 192, 194) !important ;
+}
+
+.sidebar .Info ,.marketing {
+    margin-left: 25%;
+}
+
+.fa {
+    display: inline-block !important;
+    cursor: pointer ;
+}
+
+.sidebar h6{
+    color:rgb(37, 29, 126);
+}
+
+.Categories{
+    color:rgb(231, 223, 223) !important;
+}
+
+.marketing {
+    display: none;
+}
+
+
+}
+@media only screen and (max-width: 400px) {
+
+    .sidebar{
+        background-color: rgb(191, 192, 194) !important ;
+    }
+    
+    .sidebar .Info ,.marketing {
+        margin-left: 25%;
+    }
+    
+    .fa {
+        display: inline-block !important;
+        cursor: pointer ;
+        margin-left:10px;
+    }
+    
+    
+    .sidebar h6{
+        color:rgb(37, 29, 126);
+    }
+    
+    .Categories{
+        color:rgb(231, 223, 223) !important;
+    }
+    
+    .marketing {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 370px) {
+
+        .sidebar{
+            background-color: rgb(191, 192, 194) !important ;
+        }
+        
+        .sidebar .Info ,.marketing {
+            margin-left: 25%;
+        }
+        
+        .fa {
+            display: inline-block !important;
+            cursor: pointer ;
+            margin-left:10px;
+        }
+        
+        .sidebar h6{
+            color:rgb(37, 29, 126);
+        }
+        
+        .Categories{
+            color:rgb(231, 223, 223) !important;
+        }
+        
+        .marketing {
+            display: none;
+        }
+        }

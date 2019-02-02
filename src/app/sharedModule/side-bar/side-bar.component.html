@@ -1,0 +1,48 @@
+<div class="sidebar">
+    <!--   Info  -->
+<div class="Info">
+<img src="../../../assets/images/loogo.png" />
+<div>
+<h6>Categories </h6> 
+
+<h6 class="Categories"> Order Now 
+        <i class="fa fa-circle active" aria-hidden="true"></i>
+        <i class="fa fa-list icon-cog "  (click)="toggleMenu()" style="display:none; margin-left: 40%; "  aria-hidden="true"></i>
+</h6>
+
+</div>
+</div>
+
+
+
+<!-- As the user click on the order it will be added to the table of order with the price the user can change the number of ordered items from table " as i imagined " it also not working just a static view -->
+<div [ngStyle]="{'display': isOpen ? 'block' : 'none'}" class="marketing">
+    
+        <h6 class="Categories">Family Size </h6>
+    
+    <h6 >Tunaa Pizza </h6>
+    <h6 >Sea Food Pizza</h6>
+    <h6 >Smoky chicken </h6>
+    <h6>Hot dog pizza
+      <button class="Counter" style="text-align:center">3</button>
+    </h6>
+    <h6>Cheese Lovers </h6>
+    <h6>Mashroum pizza</h6>
+    
+    </div>
+<!-- MANAGEMENT -->
+<div   [ngStyle]="{'display': isOpen ? 'block' : 'none'}"
+class=" marketing">
+
+   <h6 class="Categories"> Small Size </h6>
+
+<h6>Hot dog pizza</h6>
+<h6>Cheese Lovers pizza</h6>
+<h6>Margerita pizza  
+     <button class="Counter" style="text-align:center">5</button>
+</h6>
+<h6>sea food pizza</h6>
+
+
+</div>
+</div>

@@ -1,0 +1,134 @@
+<h2>Papa John's Menu</h2>
+
+<hr>
+<div class="fluid-container">
+<div class="table-responsive">
+<table class="table">
+    <tr>
+      <th >Order Items</th>
+      <th >Price</th>
+      <th >Quantity </th>
+    </tr>
+    <tr *ngFor="let item of  this.orderitems" >
+            <td>{{item.name}} </td>
+            <td>{{item.price}}EGP</td>
+            <td>
+        
+                <button type="button"  (click)="removeItem(item.id)" class="button left-button" data-quantity="minus" data-field="quantity">
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                </button>
+                            
+        
+                <input class="input-group-field" type="number" name="quantity" value="{{item.quantity}}" style="width:40px" readonly>
+                           
+        
+                <button type="button" (click)="addItem(item.id)"  class="button right-button" data-quantity="plus" data-field="quantity">
+                    <i class="fa fa-plus" aria-hidden="true" ></i>
+                </button>
+                         
+            </td>
+          </tr>
+ <!--   <tr >
+      <td>Chicken wings </td>
+      <td>50 EGP</td>
+      <td>
+  
+          <button type="button"   class="button left-button" data-quantity="minus" data-field="quantity">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+                      
+  
+          <input class="input-group-field" type="text" readonly style="width:40px; height: 30px;"> 
+                     
+  
+          <button type="button"  class="button right-button" data-quantity="plus" data-field="quantity">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+                   
+      </td>
+    </tr>
+    <tr >
+  
+      <td>Smoky pizza-family</td>
+      <td>90 EGP </td>
+      <td> 
+  
+          <button type="button" class="button left-button" data-quantity="minus" data-field="quantity">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+              
+         
+          <input class="input-group-field" type="text" readonly style="width:40px; height: 30px;"> 
+              
+         
+          <button type="button" class="button right-button" data-quantity="plus" data-field="quantity">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+              
+      </td>
+    </tr>
+    <tr >
+      <td>hot dog-small</td>
+      <td>80 EGP </td>
+      <td>
+                  
+          <button type="button" class="button left-button" data-quantity="minus" data-field="quantity">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+                      
+          
+          <input class="input-group-field" type="text" readonly style="width:40px; height: 30px;"> 
+                     
+          
+          <button type="button" class="button right-button" data-quantity="plus" data-field="quantity">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+                  
+      </td>
+    </tr>
+    <tr >
+      <td>fries </td>
+      <td>20 EGP </td>
+      <td>
+                            
+          <button type="button" class="button left-button" data-quantity="minus" data-field="quantity">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+                      
+          
+          <input class="input-group-field" type="text" readonly style="width:40px; height: 30px;"> 
+                      
+          
+          <button type="button" class="button right-button" data-quantity="plus" data-field="quantity">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+          </button> 
+
+      </td>
+    </tr>
+
+
+    <tr >
+      <td>Smoky chicken-family</td>
+      <td>100 EGP </td>
+      <td>
+           
+          <button type="button" class="button left-button" data-quantity="minus" data-field="quantity">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+                      
+  
+          <input class="input-group-field" type="text" readonly style="width:40px; height: 30px;"> 
+                      
+  
+          <button type="button" class="button right-button" data-quantity="plus" data-field="quantity">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+                      
+              
+      </td>
+    </tr>-->
+  
+    
+</table>
+</div>
+</div>
